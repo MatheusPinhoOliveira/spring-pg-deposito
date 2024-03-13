@@ -5,7 +5,14 @@ spring:
     active: desenvolvimento
   thymeleaf:
     check-template-location: false
-
+  datasource:
+    url: jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
+    username: rm551216
+    password: 9633
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: false
 
 server:
   port: 80
